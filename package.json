@@ -1,0 +1,11 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "A Restaurant page created using HTML, CSS and JS with usage of Webpack and ES6 Modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
