@@ -46,11 +46,7 @@ body{
     gap: 20px;
 }
 
-.nav-items > li{
-    list-style: none;
-}
-
-.reservation-btn{
+.nav-items > *{
     font-size: 1.6rem;
     padding: 10px ;
     background-color: transparent;
