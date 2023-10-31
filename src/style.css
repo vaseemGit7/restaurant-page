@@ -69,3 +69,64 @@ body{
 .restaurant-slogan{
     font-size: 2.5rem;
 }
+
+.menu-banner{
+    height: calc(100vh - 30px);
+    border: 2px solid orangered;
+    margin: 20px;
+}
+
+.menu-section{
+    display: grid;
+    grid-template: max-content;
+    place-items: center;
+    gap:20px;
+    border: 2px solid red;
+    margin:20px;
+}
+
+.beverages-title, .pastries-title{
+    font-size: 5rem;
+    justify-self: start;
+    padding: 20px 70px;
+    margin-left: 100px;
+}
+
+.pastries-title{
+    justify-self: end;
+    margin-right: 100px;
+}
+
+.beverages-menu, .pastries-menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin:20px;
+    gap: 250px;
+}
+
+.menu-items{
+    width: 600px;
+    background-color: var(--dark-blue);
+    color: var(--beige);
+    padding: 60px;
+    border-radius: 65px;
+}
+
+.menu-items>ul{
+    list-style: none;
+}
+
+.menu-item>ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu-items>ul>li{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.beverages-image, .pastries-image{
+    border: 2px dotted fuchsia;
+}
