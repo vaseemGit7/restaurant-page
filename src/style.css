@@ -112,17 +112,9 @@ body{
     border-radius: 65px;
 }
 
-.menu-items>ul{
-    list-style: none;
-}
-
-.menu-item>ul{
+.menu-item{
     display: flex;
     justify-content: space-between;
-    list-style: none;
-}
-
-.menu-items>ul>li{
     font-size: 1.8rem;
     margin-bottom: 20px;
 }
