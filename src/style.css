@@ -70,18 +70,17 @@ body{
     font-size: 2.5rem;
 }
 
-.menu-banner{
+.menu-banner, .about-banner{
     height: calc(100vh - 30px);
     border: 2px solid orangered;
     margin: 20px;
 }
 
-.menu-section{
+.menu-section, .about-section{
     display: grid;
     grid-template: max-content;
     place-items: center;
     gap:20px;
-    border: 2px solid red;
     margin:20px;
 }
 
@@ -119,6 +118,50 @@ body{
     margin-bottom: 20px;
 }
 
-.beverages-image, .pastries-image{
+.beverages-image, .pastries-image, .about-experience-image, .about-menu-image{
     border: 2px dotted fuchsia;
 }
+
+.about-note{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 800px;
+    font-size: 2rem;
+    gap: 20px;
+    padding:50px;
+}
+
+.tagline{
+    padding: 50px;
+    font-size: 4rem;
+}
+
+.about-menu, .about-experience{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 65vh;   
+    gap: 10px;
+}
+.about-menu-note, .about-experience-note{
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--dark-blue);
+}
+
+.context{
+    max-width: 70%;
+    min-width: 70%;
+    margin: auto;
+    text-align: left;
+}
+
+.title{
+    font-size: 3rem;
+    padding-bottom: 15px;
+}
+
+.description > *{
+    padding-bottom : 15px;
+}
+
