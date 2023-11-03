@@ -93,8 +93,9 @@ function createMenuItem(name,price){
 }
 
 function loadMenus (){
-    const $content = document.querySelector('.content');
-    $content.appendChild(createMenu());
+    const $main = document.querySelector('#main');
+    $main.innerHTML ='';
+    $main.appendChild(createMenu());
 }
 
 export default loadMenus;

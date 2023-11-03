@@ -117,8 +117,9 @@ function createContact(){
 }
 
 function loadContact(){
-    const $content = document.querySelector('.content');
-    $content.appendChild(createContact());
+    const $main = document.querySelector('#main');
+    $main.innerHTML ='';
+    $main.appendChild(createContact());
 }
 
 export default loadContact;

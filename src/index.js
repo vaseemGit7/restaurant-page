@@ -1,13 +1,4 @@
 import './style.css'
-import loadHome from './home'
-import loadMenus from './menus'
-import loadAbout from './about'
-import loadContact from './contact'
+import initializeWebsite from './webiste'
 
-// loadHome();
-
-// loadMenus();
-
-// loadAbout();
-
-loadContact();
+initializeWebsite();

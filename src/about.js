@@ -124,8 +124,9 @@ function createAbout () {
 }
 
 function loadAbout(){
-    const $content = document.querySelector('.content');
-    $content.appendChild(createAbout());
+    const $main = document.querySelector('#main');
+    $main.innerHTML ='';
+    $main.appendChild(createAbout());
 }
 
 export default loadAbout;
