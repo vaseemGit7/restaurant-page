@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@500&display=swap');
+@font-face {
+    font-family: 'Bicyclette';
+    src: url(./fonts/Bicyclette-Light.otf) format(otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Bicyclette';
+    src: url(./fonts/Bicyclette-Regular.otf) format(otf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Bicyclette';
+    src: url(./fonts/Bicyclette-Bold.otf) format(otf);
+    font-weight: 700;
+}
 
 *{
     margin: 0;
@@ -19,7 +37,7 @@ html{
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Bicyclette', sans-serif;
     background-color: var(--beige) ;
     color: var(--dark-blue);
 }
@@ -69,11 +87,24 @@ body{
 }
 
 .restaurant-name{
-    font-size: 5rem;
+    font-family: 'Playfair Display';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-first{
+    font-size: 2rem;
+}
+
+.name-second{
+    font-size: 5.5rem;
 }
 
 .restaurant-slogan{
-    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 .menu-banner, .about-banner{
@@ -103,6 +134,7 @@ body{
 
 .beverages-title, .pastries-title{
     font-size: 5rem;
+    font-weight: 700;
     justify-self: start;
     padding: 20px 70px;
     margin-left: 100px;
@@ -129,6 +161,8 @@ body{
 }
 
 .menu-item{
+    font-family: 'Poppins';
+    font-weight: 400;
     display: flex;
     justify-content: space-between;
     font-size: 1.8rem;
@@ -136,7 +170,6 @@ body{
 }
 
 .beverages-image, .pastries-image, .about-experience-image, .about-menu-image{
-    /* border: 2px dotted fuchsia; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -159,6 +192,8 @@ body{
 }
 
 .about-note{
+    font-family: 'Poppins';
+    font-weight: 300;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -169,6 +204,8 @@ body{
 }
 
 .tagline{
+    font: 'Bicyclette';
+    font-weight: 700;
     padding: 50px;
     font-size: 4rem;
 }
@@ -193,11 +230,15 @@ body{
 }
 
 .title{
+    font: 'Bicyclette';
+    font-weight: 700;
     font-size: 3rem;
     padding-bottom: 15px;
 }
 
 .description > *{
+    font-family: 'Poppins';
+    font-weight: 300;
     padding-bottom : 15px;
 }
 
@@ -210,6 +251,7 @@ body{
 }
 
 .contact-header{
+    font-weight: 700;
     font-size: 3.6rem;
 }
 
@@ -240,18 +282,21 @@ body{
 }
 .form-element > input{
     color: var(--dark-blue);
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     padding: 10px;
     border-radius: 10px;
     border: none;
 }
 
 .form-element > textarea{
+    font-family: 'Poppins';
+    font-size: 1.6rem;
     min-height: 150px;
     max-height: 300px ;
     resize: vertical;
     border-radius: 10px;
     border: none;
+    padding: 10px;
 }
 
 .sendBtn{
