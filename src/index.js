@@ -1,4 +1,4 @@
 import './style.css'
-import initializeWebsite from './webiste'
+import initializeWebsite from './website'
 
 initializeWebsite();
