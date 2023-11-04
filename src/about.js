@@ -59,7 +59,7 @@ function createAbout () {
 
 
     const tagline = document.createElement('div');
-    tagline.textContent = "A Sweet Sip and a Pastry's Kiss";
+    tagline.textContent = "A SWEET SIP AND A PASTRY'S KISS";
     tagline.classList.add('tagline');
 
 

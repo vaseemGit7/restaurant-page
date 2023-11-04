@@ -5,10 +5,19 @@ function createHome(){
     const restraurantName = document.createElement('div');
     const restraurantSlogan = document.createElement('div');    
 
-    restraurantName.textContent = 'The Patisserie Haven';
+    const firstPara = document.createElement('p');
+    firstPara.textContent = "THE";
+    firstPara.classList.add('name-first');
+
+    const secondPara = document.createElement('p');
+    secondPara.textContent = "PATISSERIE HAVEN";
+    secondPara.classList.add('name-second')
+
+    restraurantName.appendChild(firstPara);
+    restraurantName.appendChild(secondPara);
     restraurantName.classList.add('restaurant-name');
 
-    restraurantSlogan.textContent = "A Sweet Sip and a Pastry's Kiss";
+    restraurantSlogan.textContent = "A SWEET SIP AND A PASTRY'S KISS";
     restraurantSlogan.classList.add('restaurant-slogan');
 
     welcomeSection.classList.add('welcome-section');

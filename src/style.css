@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
 @font-face {
     font-family: 'Bicyclette';
-    src: url(./fonts/Bicyclette-Light.otf) format(otf);
+    src: url(./fonts/Bicyclette-Light.otf);
     font-weight: 300;
 }
 
 @font-face {
     font-family: 'Bicyclette';
-    src: url(./fonts/Bicyclette-Regular.otf) format(otf);
+    src: url(./fonts/Bicyclette-Regular.otf);
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'Bicyclette';
-    src: url(./fonts/Bicyclette-Bold.otf) format(otf);
+    src: url(./fonts/Bicyclette-Bold.otf);
     font-weight: 700;
 }
 
@@ -37,7 +37,7 @@ html{
 }
 
 body{
-    font-family: 'Bicyclette', sans-serif;
+    font-family: 'Bicyclette','Poppins', sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: var(--beige) ;
     color: var(--dark-blue);
 }
@@ -48,9 +48,12 @@ body{
 }
 
 .nav-bar{
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     padding: 15px 20px;
+    background-color: var(--beige);
 }
 
 .logo{
@@ -70,12 +73,13 @@ body{
     gap: 20px;
 }
 
-.nav-items > *{
-    font-size: 1.6rem;
-    padding: 10px ;
+.nav-items > button{
+    font-family: 'Bicyclette';
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 1.8rem;
     background-color: transparent;
-    outline: none;
-    border: 2px solid var(--dark-blue);
+    border: none;
 }
 
 .welcome-section{
@@ -133,6 +137,7 @@ body{
 }
 
 .beverages-title, .pastries-title{
+    font-family: 'Bicyclette';
     font-size: 5rem;
     font-weight: 700;
     justify-self: start;
@@ -149,14 +154,15 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     margin:20px;
-    gap: 250px;
+    gap: 60px;
 }
 
 .menu-items{
-    width: 600px;
+    width: 40vw;
     background-color: var(--dark-blue);
     color: var(--beige);
-    padding: 60px;
+    padding: 100px;
+    padding-bottom: 80px;
     border-radius: 65px;
 }
 
@@ -177,10 +183,13 @@ body{
 
 .beverages-image{
     background-image: url(./images/beverage.jpeg);
+    border-radius: 65px;
 }
 
 .pastries-image{
     background-image: url(./images/pastry.jpg);
+    background-position: bottom;
+    border-radius: 65px;
 }
 
 .about-experience-image{
@@ -204,7 +213,7 @@ body{
 }
 
 .tagline{
-    font: 'Bicyclette';
+    font-family: 'Playfair Display';
     font-weight: 700;
     padding: 50px;
     font-size: 4rem;
@@ -230,7 +239,6 @@ body{
 }
 
 .title{
-    font: 'Bicyclette';
     font-weight: 700;
     font-size: 3rem;
     padding-bottom: 15px;
@@ -256,10 +264,12 @@ body{
 }
 
 .contact-subheader{
+    font-family: 'Poppins';
     font-size: 1.3rem;
 }
 
 .contact-form{
+    font-family: 'Poppins';
     display: grid;
     width: 600px;
     padding: 0px 40px 40px;

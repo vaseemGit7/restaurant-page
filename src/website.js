@@ -41,10 +41,6 @@ function createNav(){
     })
     navItems.appendChild(contactBtn);
 
-    const reservationBtn = document.createElement('button');
-    reservationBtn.textContent = 'RESERVATION';
-    navItems.appendChild(reservationBtn);
-
     navBar.appendChild(logo);
     navBar.appendChild(navItems);
 
