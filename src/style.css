@@ -36,8 +36,12 @@ body{
 }
 
 .logo{
-    width: 50px;
-    border: 2px solid green;
+    height: 90px;
+    width: 150px;
+    background-image: url(./icons/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .nav-items{
@@ -73,9 +77,20 @@ body{
 }
 
 .menu-banner, .about-banner{
-    height: calc(100vh - 30px);
-    border: 2px solid orangered;
+    height: calc(100vh - 170px);
     margin: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+}
+
+.menu-banner{
+    background-image: url(./images/menu-banner.jpg); 
+}
+
+.about-banner{
+    background-image: url(./images/about-banner.jpg);
 }
 
 .menu-section, .about-section{
@@ -121,7 +136,26 @@ body{
 }
 
 .beverages-image, .pastries-image, .about-experience-image, .about-menu-image{
-    border: 2px dotted fuchsia;
+    /* border: 2px dotted fuchsia; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.beverages-image{
+    background-image: url(./images/beverage.jpeg);
+}
+
+.pastries-image{
+    background-image: url(./images/pastry.jpg);
+}
+
+.about-experience-image{
+    background-image: url(./images/experience.jpg);
+}
+
+.about-menu-image{
+    background-image: url(./images/menus.jpg);
 }
 
 .about-note{
