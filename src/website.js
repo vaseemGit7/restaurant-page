@@ -77,11 +77,32 @@ function createMain(){
     return main;
 }
 
+function createFooter(){
+    const footer = document.createElement('footer');
+    footer.classList.add('footer');
+
+    const name = document.createElement('div');
+    name.textContent = "Made by Vaseem Ahamed";
+
+    const githubLink = document.createElement('a');
+    githubLink.href = "https://github.com/vaseemGit7/restaurant-page";
+    
+    const ionIcon = document.createElement("ion-icon");
+    ionIcon.setAttribute("name", "logo-github");
+    githubLink.appendChild(ionIcon);
+
+    footer.appendChild(name);
+    footer.appendChild(githubLink);
+
+    return footer;
+}
+
 function initializeWebsite(){
     const $content = document.querySelector('#content');
 
     $content.appendChild(createNav());
     $content.appendChild(createMain());
+    $content.appendChild(createFooter());
 
     loadHome();
 }

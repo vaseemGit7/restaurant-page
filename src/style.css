@@ -336,6 +336,26 @@ body{
     border: 2px solid var(--dark-blue);
 }
 
+.footer{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--beige);
+    background-color: var(--dark-blue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+ion-icon{
+    font-size: 2.5rem;
+    color: var(--beige);
+    padding-left: 20px;
+}
+
 .nav-items > button:hover {
     cursor: pointer;
     padding-bottom: 3px;
