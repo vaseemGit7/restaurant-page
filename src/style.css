@@ -29,7 +29,7 @@
     --white: #FFFFFF;
     --gray: #9ca3af;
     --dark-blue: #1C2C59;
-    --yellow: #fde68a;
+    --gold: #F2CA50;
 }
 
 html{
@@ -38,6 +38,7 @@ html{
 }
 
 body{
+    position: relative;
     font-family: 'Bicyclette','Poppins', sans-serif, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: var(--beige) ;
     color: var(--dark-blue);
@@ -85,7 +86,7 @@ body{
 
 .active{
     padding-bottom: 3px;
-    border-bottom: 3px solid var(--dark-blue);
+    border-bottom: 3px solid var(--gold);
 }
 
 .welcome-section{
@@ -179,6 +180,8 @@ body{
     padding: 100px;
     padding-bottom: 80px;
     border-radius: 65px;
+    outline: 5px solid var(--gold);
+    outline-offset: -15px;
 }
 
 .menu-item{
@@ -244,7 +247,7 @@ body{
 .about-menu-note, .about-experience-note{
     display: grid;
     place-items: center;
-    border: 2px solid var(--dark-blue);
+    border: 5px solid var(--gold);
 }
 
 .context{
@@ -357,6 +360,23 @@ ion-icon{
     padding-left: 20px;
 }
 
+
+body::before{
+    background-color: #1C2C59;
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, var(--beige) 13px);
+    z-index: 10;
+}
+
 .restaurant-name::before{
     content: "";
     height: 100px;
@@ -370,17 +390,24 @@ ion-icon{
     transform: rotate(20deg);
 }
 
+.restaurant-name::after{
+    content: "";
+    width: 80%;
+    border: 2px solid var(--gold);
+    border-radius: 5px;
+}
+
 .nav-items > button:hover {
     cursor: pointer;
     padding-bottom: 3px;
-    border-bottom: 3px solid var(--dark-blue);
+    border-bottom: 3px solid var(--gold);
 }
 
 .sendBtn:hover{
     cursor: pointer;
-    background-color: var(--yellow);
+    background-color: var(--gold);
 }
 
 ion-icon:hover{
-    color: var(--yellow);
+    color: var(--gold);
 }
