@@ -4,6 +4,10 @@ function createAbout () {
     const aboutBanner = document.createElement('div');
     aboutBanner.classList.add('about-banner');
 
+    const bannerTitle = document.createElement('p');
+    bannerTitle.textContent = "OUR STORY";
+    aboutBanner.appendChild(bannerTitle);
+
     const aboutSection = document.createElement('div');
     aboutSection.classList.add('about-section');
 

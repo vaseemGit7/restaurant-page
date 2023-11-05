@@ -5,6 +5,10 @@ function createMenu(){
     const menuBanner = document.createElement('div');
     menuBanner.classList.add('menu-banner');
 
+    const bannerTitle = document.createElement('p');
+    bannerTitle.textContent = "MENUS";
+    menuBanner.appendChild(bannerTitle);
+
     const menuSection = document.createElement('div');
     menuSection.classList.add('menu-section');
 

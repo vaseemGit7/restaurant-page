@@ -15,28 +15,40 @@ function createNav(){
 
     const homeBtn = document.createElement('button');
     homeBtn.textContent = 'HOME';
-    homeBtn.addEventListener('click',()=>{
+    homeBtn.classList.add('nav-buttons');
+    homeBtn.addEventListener('click',(e)=>{
+        if (e.target.classList.contains("active")) return;
+        setActiveButton(homeBtn);
         loadHome();
     })
     navItems.appendChild(homeBtn);
 
     const menuBtn = document.createElement('button');
     menuBtn.textContent = 'MENUS';
-    menuBtn.addEventListener('click',()=>{
+    menuBtn.classList.add('nav-buttons');
+    menuBtn.addEventListener('click',(e)=>{
+        if (e.target.classList.contains("active")) return;
+        setActiveButton(menuBtn);
         loadMenus();
     })
     navItems.appendChild(menuBtn);
 
     const aboutBtn = document.createElement('button');
     aboutBtn.textContent = 'OUR STORY';
-    aboutBtn.addEventListener('click',()=>{
+    aboutBtn.classList.add('nav-buttons');
+    aboutBtn.addEventListener('click',(e)=>{
+        if (e.target.classList.contains("active")) return;
+        setActiveButton(aboutBtn);
         loadAbout();
     })
     navItems.appendChild(aboutBtn);
 
     const contactBtn = document.createElement('button');
     contactBtn.textContent = 'CONTACT';
-    contactBtn.addEventListener('click',()=>{
+    contactBtn.classList.add('nav-buttons');
+    contactBtn.addEventListener('click',(e)=>{
+        if (e.target.classList.contains("active")) return;
+        setActiveButton(contactBtn);
         loadContact();
     })
     navItems.appendChild(contactBtn);
@@ -46,6 +58,18 @@ function createNav(){
 
     return navBar;
 }
+
+function setActiveButton(button) {
+    const buttons = document.querySelectorAll('.nav-buttons');
+  
+    buttons.forEach((button) => {
+      if (button !== this) {
+        button.classList.remove("active");
+      }
+    });
+  
+    button.classList.add("active");
+  }
 
 function createMain(){
     const main = document.createElement('div');
