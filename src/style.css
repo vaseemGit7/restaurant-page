@@ -240,6 +240,7 @@ body{
     height: 65vh;   
     gap: 10px;
 }
+
 .about-menu-note, .about-experience-note{
     display: grid;
     place-items: center;
@@ -356,6 +357,19 @@ ion-icon{
     padding-left: 20px;
 }
 
+.restaurant-name::before{
+    content: "";
+    height: 100px;
+    width: 100px;
+    background-image: url(./icons/frappe.png);
+    background-repeat: no-repeat;
+    background-position: center ;
+    position: absolute;
+    right: 10%;
+    bottom: 15%;
+    transform: rotate(20deg);
+}
+
 .nav-items > button:hover {
     cursor: pointer;
     padding-bottom: 3px;
@@ -365,4 +379,8 @@ ion-icon{
 .sendBtn:hover{
     cursor: pointer;
     background-color: var(--yellow);
+}
+
+ion-icon:hover{
+    color: var(--yellow);
 }
